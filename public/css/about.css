@@ -99,6 +99,8 @@ font-weight: 900;
 }.about-parent-section{
     display: flex;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     width: 100%;
     background-color: antiquewhite;
     border-radius:10px;
@@ -123,9 +125,9 @@ font-weight: 900;
     margin-bottom: 70px;
     padding: 20px;
     box-shadow: 5px 5px 5px  rgb(41, 42, 43) ;
-    font-size: 20px;
+    font-size: 15px;
     overflow-wrap: break-word;
-    width: 65%;
+    width: 70%;
 }.about-first-div a{
     text-decoration: none;
 }.about-first-div a:hover{
@@ -154,6 +156,7 @@ font-weight: 900;
     height: 4rem;
     font-size: 3rem;
     align-self: center;
+    align-content: center;
 }.footer_div{
     display: flex;
     flex-wrap: wrap;
