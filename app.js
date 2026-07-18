@@ -45,4 +45,4 @@ app.get("/shakawa/test", (req, res) => {
     res.send("OK");
 });
 
-app.listen(Port||3000,()=>{console.log("server listning")})
+app.listen(3000,()=>{console.log("server listning")})
