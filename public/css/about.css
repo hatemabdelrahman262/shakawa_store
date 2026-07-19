@@ -125,9 +125,9 @@ font-weight: 900;
     margin-bottom: 70px;
     padding: 20px;
     box-shadow: 5px 5px 5px  rgb(41, 42, 43) ;
-    font-size: 15px;
+    font-size: 12px;
     overflow-wrap: break-word;
-    width: 70%;
+    width: 80%;
 }.about-first-div a{
     text-decoration: none;
 }.about-first-div a:hover{
@@ -136,7 +136,7 @@ font-weight: 900;
 }.about-list{
     display: flex;
     flex-wrap: wrap;
-    line-height: 200%;
+    line-height: 170%;
     list-style:outside;
 }.pizza\,boom\,fatair{
     color: #2A1E17;

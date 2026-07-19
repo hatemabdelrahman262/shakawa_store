@@ -1,6 +1,3 @@
-/* *{
-    outline: 2px solid red;
-} */
 body{
     overflow: hidden;
     overflow-y:scroll;
@@ -106,6 +103,458 @@ nav a{
     font-weight: bolder;
     bottom:0;
     box-sizing: border-box;
+}
+/* *{
+    outline: 2px solid red;
+} */
+ @media (max-width: 1400px) {
+    body{
+    overflow: hidden;
+    overflow-y:auto;
+    color: #D4A017;
+    background-color: #FAF8F3;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+    margin: 0;
+}.parent-section{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius:3px;
+    height: 6rem;
+    padding: 0;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    color: #2A1E17;
+    margin-top: 0;
+    width: 20px;
+    font-weight: bolder;
+    height: 20vh;
+    font-size:2.5rem;
+    margin-left: 10px;
+}
+nav{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 6vw;
+    width: fit-content;
+    font-size: 2.4rem;
+    margin-right: 12rem;
+}
+nav a{
+    display: flex;
+    text-decoration: none;
+    color: #2A1E17;
+    align-self: center;
+}
+.header-img{
+    display: block;
+    width: 100%;
+    height: auto;
+    justify-self:center;
+    right: 0;
+}
+.carousel-section{
+    width: 100%;
+    background-color: #f5f2eb;
+    height: 350px;
+    border-radius:5px ;
+}
+.img-container{
+    display: flex;
+    gap:80px;
+    width:90%;
+    height: 240px;
+    background-color: #E8DCCB;
+    overflow: hidden;
+    position: relative;
+    justify-self: center;
+    border-radius: 10px;
+}
+.img-container img{
+    height: 240px;
+}
+.track {
+    display: flex;
+    width: max-content;
+    gap: 200px;
+    animation: slide 30s linear infinite;
+}
+.track:hover {
+    animation-play-state: paused;
+}
+.slide-image {
+    height: 200px;
+    width:350px;
+    animation: move 15s linear infinite;
+    border-radius: 20px;
+}
+.second-text{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: 35px;
+}
+.order-section{
+    position: relative;
+}
+.order-section img{
+    display: block;
+    width: 80vw;
+    justify-self: center;
+    margin-bottom: 50px;
+}.footer_div{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.1 solid rgba(0, 0, 0, 0.745);
+    background-color: #E8DCCB;
+    width: 100%;
+    height:2% ;
+    justify-content: center;
+    font-weight: bolder;
+    bottom:0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+ }
+@media (max-width: 1000px) {
+    body{
+    overflow: hidden;
+    overflow-y:auto;
+    color: #D4A017;
+    background-color: #FAF8F3;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+    margin: 0;
+}.parent-section{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius:3px;
+    height: 6rem;
+    padding: 0;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    color: #2A1E17;
+    margin-top: 0;
+    width: 20px;
+    font-weight: bolder;
+    height: 20vh;
+    font-size:2rem;
+}
+nav{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 4vw;
+    width: fit-content;
+    font-size: 2.2rem;
+    margin-right: 4rem;
+}
+nav a{
+    display: flex;
+    text-decoration: none;
+    color: #2A1E17;
+    align-self: center;
+}
+.header-img{
+    display: block;
+    width: 100%;
+    height: auto;
+    justify-self:center;
+    right: 0;
+}
+.carousel-section{
+    width: 100%;
+    background-color: #f5f2eb;
+    height: 350px;
+    border-radius:5px ;
+}
+.img-container{
+    display: flex;
+    gap:80px;
+    width:90%;
+    height: 240px;
+    background-color: #E8DCCB;
+    overflow: hidden;
+    position: relative;
+    justify-self: center;
+    border-radius: 10px;
+}
+.track {
+    display: flex;
+    width: max-content;
+    gap: 200px;
+    animation: slide 30s linear infinite;
+}
+.track:hover {
+    animation-play-state: paused;
+}
+.slide-image {
+    height: 200px;
+    width:350px;
+    animation: move 15s linear infinite;
+    border-radius: 20px;
+}
+.second-text{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: 35px;
+}
+.order-section{
+    position: relative;
+}
+.order-section img{
+    display: block;
+    width: 80vw;
+    justify-self: center;
+    margin-bottom: 50px;
+}.footer_div{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.1 solid rgba(0, 0, 0, 0.745);
+    background-color: #E8DCCB;
+    width: 100%;
+    height:2% ;
+    justify-content: center;
+    font-weight: bolder;
+    bottom:0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+}
+@media (max-width: 540px) {
+    body{
+    overflow: hidden;
+    overflow-y:auto;
+    color: #D4A017;
+    background-color: #FAF8F3;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+    margin: 0;
+}.parent-section{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius:3px;
+    height: 6rem;
+    padding: 0;
+}
+.header{
+    display: flex;
+    color: #2A1E17;
+    margin-top: 0;
+    margin-left: 0;
+    width: 20px;
+    font-weight: bolder;
+    height: 7vh;
+    font-size:1.7rem;
+    align-self: flex-end;
+}
+nav{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 4vw;
+    max-width: fit-content;
+    font-size:22px;
+    margin-right: .5rem;
+}
+nav a{
+    display: flex;
+    text-decoration: none;
+    color: #2A1E17;
+    align-self: center;
+}
+.header-img{
+    display: block;
+    width: 100%;
+    height: auto;
+    justify-self:center;
+    right: 0;
+}
+.carousel-section{
+    width: 100%;
+    background-color: #f5f2eb;
+    height: 350px;
+    border-radius:5px ;
+}
+.img-container{
+    display: flex;
+    gap:80px;
+    width:90%;
+    height: 230px;
+    background-color: #E8DCCB;
+    overflow: hidden;
+    position: relative;
+    justify-self: center;
+    border-radius: 10px;
+}
+.img-container img{
+    height: 230px;
+}
+.track {
+    display: flex;
+    width: max-content;
+    gap: 200px;
+    animation: slide 30s linear infinite;
+}
+.track:hover {
+    animation-play-state: paused;
+}
+.slide-image {
+    height: 200px;
+    width:350px;
+    animation: move 15s linear infinite;
+    border-radius: 20px;
+}
+.second-text{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: 23px;
+}
+.order-section{
+    position: relative;
+}
+.order-section img{
+    display: block;
+    width: 80vw;
+    justify-self: center;
+    margin-bottom: 50px;
+}.footer_div{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.1 solid rgba(0, 0, 0, 0.745);
+    background-color: #E8DCCB;
+    width: 100%;
+    height:2% ;
+    justify-content: center;
+    font-weight: bolder;
+    bottom:0;
+    box-sizing: border-box;
+    font-size: 0.7rem;
+}
+}
+@media (min-width: 1400px) {
+    body{
+    overflow: hidden;
+    overflow-y:auto;
+    color: #D4A017;
+    background-color: #FAF8F3;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+    margin: 0;
+}.parent-section{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius:3px;
+    height: 6.5rem;
+    padding: 0;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    color: #2A1E17;
+    margin-top: 0;
+    width: 800px;
+    font-weight: bolder;
+    height: auto;
+    font-size:3rem;
+    align-self:baseline;
+    margin-left: 15px;
+}
+nav{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 6vw;
+    width: 50%;
+    font-size: 3rem;
+    margin-right: 0;
+}
+nav a{
+    display: flex;
+    text-decoration: none;
+    color: #2A1E17;
+    align-self: center;
+}
+.header-img{
+    display: block;
+    width: 100%;
+    height: auto;
+    justify-self:center;
+    right: 0;
+}
+.carousel-section{
+    width: 100%;
+    background-color: #f5f2eb;
+    height: 350px;
+    border-radius:5px ;
+}
+.img-container{
+    display: flex;
+    gap:80px;
+    width:80%;
+    height: 250px;
+    background-color: #E8DCCB;
+    overflow: hidden;
+    position: relative;
+    justify-self: center;
+    border-radius: 10px;
+}
+.track {
+    display: flex;
+    width: max-content;
+    gap: 280px;
+    animation: slide 30s linear infinite;
+}.track img {
+    height: 250px;
+}
+.track:hover {
+    animation-play-state: paused;
+}
+.slide-image {
+    height: 200px;
+    width:350px;
+    animation: move 15s linear infinite;
+    border-radius: 20px;
+}
+.second-text{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: 35px;
+}
+.order-section{
+    position: relative;
+}
+.order-section img{
+    display: block;
+    width: 80vw;
+    justify-self: center;
+    margin-bottom: 50px;
+}.footer_div{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.1 solid rgba(0, 0, 0, 0.745);
+    background-color: #E8DCCB;
+    width: 100%;
+    height:2% ;
+    justify-content: center;
+    font-weight: bolder;
+    bottom:0;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+    
 }
 @keyframes slide {
     from {
