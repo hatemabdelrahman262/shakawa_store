@@ -31,7 +31,7 @@ app.post("/support",async(req,res,next)=>{
         });
 
         console.log("data:", data);
-        console.log("error:", error);
+        console.log(JSON.stringify(error, null, 2));
         
         res.status(200).json({question:saved_question})
 }catch(error){
