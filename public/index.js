@@ -3,7 +3,7 @@ const form = document.getElementById("support-form");
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const data = {
+    const datas = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value
     };
@@ -13,7 +13,7 @@ form.addEventListener("submit", async (e) => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(datas)
     });
 
     const result = await response;
