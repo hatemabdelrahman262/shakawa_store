@@ -18,7 +18,7 @@ app.post("/support",async(req,res,next)=>{
     console.log("sum:",saved_question)
      try {
         console.log("Creating Resend...");
-        const resend = new Resend(RESEND_URI);
+        const resend = new Resend(String(RESEND_URI));
 
         console.log("Sending email...");
         const response = await resend.emails.send({
@@ -41,7 +41,7 @@ app.post("/shakawa/emails", async (req, res, next) => {
 
     try {
         console.log("Creating Resend...");
-        const resend = new Resend(RESEND_URI);
+        const resend = new Resend(String(RESEND_URI));
 
         console.log("Sending email...");
         const response = await resend.emails.send({
