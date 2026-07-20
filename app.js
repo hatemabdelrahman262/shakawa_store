@@ -29,7 +29,7 @@ app.post("/support",async(req,res,next)=>{
         <p>Name: ${saved_question.name}</p>
         <p>Email: ${saved_question.email}</p>`
         });
-
+        console.log(RESEND_URI)
         console.log("data:", data);
         console.log(JSON.stringify(error, null, 2));
         
