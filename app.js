@@ -12,11 +12,29 @@ connectDB()
 app.get("/shakawa",(req,res,next)=>{
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
-app.post("/support",(req,res,next)=>{
+app.post("/support",async(req,res,next)=>{
     const saved_question = req.body
-    console.log(saved_question)
-    res.status(200).json({question:saved_question})
-})
+    console.log("sum:",saved_question)
+     try {
+        console.log("Creating Resend...");
+        const resend = new Resend("re_LVPbRzy8_LmYrDZAsbRVzLy8k9uZatyV3");
+
+        console.log("Sending email...");
+        const response = await resend.emails.send({
+            from: "onboarding@resend.dev",
+            to: "hatemabdelrahman262@gmail.com",
+            subject: "nigger digger",
+            html: `<p>${saved_question.name}:${saved_question.email}</p>`
+        });
+
+        console.log("response:"+response);
+        console.log("Email sent successfully!");
+        
+        res.status(200).json({question:saved_question})
+}catch(error){
+    console.error("err:",error)
+}})
+
 app.post("/shakawa/emails", async (req, res, next) => {
     console.log("Route hit");
 

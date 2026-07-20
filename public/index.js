@@ -8,7 +8,6 @@ form.addEventListener("submit", async (e) => {
         email: document.getElementById("email").value
     };
     console.log(document.getElementById("name").value,document.getElementById("email").value)
-    console.log("sending")
     const response = await fetch("/support", {
         method: "POST",
         headers: {
