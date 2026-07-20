@@ -21,15 +21,17 @@ app.post("/support",async(req,res,next)=>{
         const resend = new Resend(String(RESEND_URI));
 
         console.log("Sending email...");
-        const response = await resend.emails.send({
-            from: "onboarding@resend.dev",
-            to: "hatemabdelrahman262@gmail.com",
-            subject: "nigger digger",
-            html: `<p>${saved_question.name}:${saved_question.email}</p>`
+        const { data, error } = await resend.emails.send({
+        from: "onboarding@resend.dev",
+        to: "hatemabdelrahman262@gmail.com",
+        subject: "Support Request",
+        html: `
+        <p>Name: ${saved_question.name}</p>
+        <p>Email: ${saved_question.email}</p>`
         });
 
-        console.log("response:"+response);
-        console.log("Email sent successfully!");
+        console.log("data:", data);
+        console.log("error:", error);
         
         res.status(200).json({question:saved_question})
 }catch(error){
