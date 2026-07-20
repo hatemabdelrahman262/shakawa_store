@@ -2,6 +2,7 @@ const express = require("express");
 const helmet = require("helmet");
 const path = require("path")
 const connectDB = require("./connect");
+const {RESEND_URI}=require("./config")
 const { Resend } = require("resend");
 const app = express()
 app.use(helmet())
@@ -17,7 +18,7 @@ app.post("/support",async(req,res,next)=>{
     console.log("sum:",saved_question)
      try {
         console.log("Creating Resend...");
-        const resend = new Resend("re_LVPbRzy8_LmYrDZAsbRVzLy8k9uZatyV3");
+        const resend = new Resend(RESEND_URI);
 
         console.log("Sending email...");
         const response = await resend.emails.send({
@@ -40,7 +41,7 @@ app.post("/shakawa/emails", async (req, res, next) => {
 
     try {
         console.log("Creating Resend...");
-        const resend = new Resend("re_Y7tM45c5_LbnYaNGAgztccH1ji9ShGncJ");
+        const resend = new Resend(RESEND_URI);
 
         console.log("Sending email...");
         const response = await resend.emails.send({
