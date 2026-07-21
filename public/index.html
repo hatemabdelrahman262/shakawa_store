@@ -6,6 +6,7 @@
     <title>SHAKAWA</title>
     <link rel="icon" href="./pic/ChatGPT Image Jul 15, 2026, 04_22_40 AM.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="/shakawa/order"> -->
 </head>
 <body>
     <img src="./pic/ChatGPT Image Jul 15, 2026, 04_01_54 AM.png" alt="pizza shakawa" class="header-img" sizes="1672px,941">
@@ -14,9 +15,21 @@
         <nav>
             <a href="./about.html">about</a>
             <a href="./support.html">support</a>
-            <a href="./order.html">order</a>
+            <a  id="order">order</a>
         </nav>
     </section>
+    <div class="popup">
+            <span class="popup_login"><h2 >sign in</h2></span>
+            <button id="popup_close">x</button>
+            <!-- action="/shakawa/sign_in"  -->
+            <form  class="popup_input">
+                <label for="">sign in</label>
+                <input type="email" placeholder="enter your email" required max="20" id="email" value=""> 
+                <input type="password" placeholder="password" required max="40" id="password" value="">
+                <button type="submit" class="popup_submit">sign up</button>
+            </form>
+            
+        </div>
     <section class="carousel-section">
         <p class="second-text">best pizza restaurant in banha..</p>
     <div class="img-container">
